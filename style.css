@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url("img/Blue\ &\ Black\ Futuristic\ Technology\ Facebook\ Cover.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    padding:20px;
+    background-color: #0089AB;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    margin:30px 0;
+    display: flex;
+    gap: 30px;
+}
+button{
+    padding:10px;
+    font-size: 50px;
+    cursor:pointer;
+    border:none;
+    border-radius: 20px;
+}
+
+button:hover{
+    opacity: 0.7;
+    transition:0.5s ease-in-out;
+}
+
+#rock{
+    background-color: black;
+}
+
+#paper{
+    background-color: black;
+}
+
+#scissors{
+    background-color: black;
+}
+p{
+    font-weight: bold;
+    margin-bottom:10px;
+    font-size:20px;
+}
+.sua-pontuacao span{
+    color:#0509fd;
+}
+.pontuacao-adversaria span{
+    color:red;
+}
+
+/*const botaoRock = document.querySelector("#rock");
+const botaoPaper = document.querySelector("#paper");
+const botaoScissors = document.querySelector("#scissors");
+const resultado = document.querySelector(".resultado")
+const meusPontos = document.querySelector("#meus-pontos")
+const pontosMaquina = document.querySelector("#pontos-maquina")
+
+
+let numeroPontosHumano = 0
+let numeroPontosMaquina = 0
+
+const playHumano = (escolhaHumano) => {
+
+    jogarJogo(escolhaHumano, playMaquina())
+}
+
+const playMaquina = () => {
+    const escolhas = ['rock', 'paper', 'scissors']
+    const numeroAleatorio = Math.floor(Math.random()*3 )
+
+    return escolhas[numeroAleatorio]
+}
+
+const jogarJogo = (humano , maquina) =>{ 
+    console.log('humano: ' + humano + ' maquina:' + maquina)
+
+    if(humano === maquina){
+        resultado.innerHTML = "Deu empate"
+    } else if( (humano === 'paper' && maquina === 'rock') || (humano === 'rock' && maquina === 'scissors') || (humano === 'scissors' && maquina === 'paper')){
+        numeroPontosHumano++
+        meusPontos.innerHTML = numeroPontosHumano
+        resultado.innerHTML = 'Você ganhou!'
+    }else{
+        numeroPontosMaquina++
+        pontosMaquina.innerHTML = numeroPontosMaquina
+        resultado.innerHTML = 'Você perdeu para maquina, Tente novamente!'
+    }
+}
+botaoRock.addEventListener("click", () => playHumano('rock'));
+botaoPaper.addEventListener("click", () => playHumano('paper'));
+botaoScissors.addEventListener("click", () => playHumano('scissors'));*/
